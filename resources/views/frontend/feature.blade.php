@@ -1,7 +1,18 @@
 @extends('frontend.layouts.app')
 
 @section('meta')
-    <title>HADevZone - Websites, Dashboards & Business Web Solutions</title>
+
+<title>Features | HADevZone</title>
+
+<meta name="title" content="Platform Features | HADevZone">
+
+<meta name="description" content="Discover features of HADevZone solutions including performance, scalability, security, and custom integrations.">
+
+<meta name="keywords" content="web features, CRM features, dashboard features, secure web apps, scalable systems">
+
+<meta property="og:title" content="Platform Features | HADevZone">
+
+<meta property="og:description" content="Powerful features designed for modern web applications and business systems.">
 
 @endsection
 

@@ -1,7 +1,18 @@
 @extends('frontend.layouts.app')
 
 @section('meta')
-    <title>HADevZone - Websites, Dashboards & Business Web Solutions</title>
+
+<title>Testimonials | HADevZone</title>
+
+<meta name="title" content="Client Testimonials | HADevZone">
+
+<meta name="description" content="Read what our clients say about HADevZone web development and business solutions services.">
+
+<meta name="keywords" content="client reviews, testimonials, web development feedback, HADevZone reviews">
+
+<meta property="og:title" content="Client Testimonials | HADevZone">
+
+<meta property="og:description" content="Real feedback from clients who used our web development services.">
 
 @endsection
 

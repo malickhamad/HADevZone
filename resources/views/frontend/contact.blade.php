@@ -1,7 +1,19 @@
 @extends('frontend.layouts.app')
 
 @section('meta')
-    <title>HADevZone - Websites, Dashboards & Business Web Solutions</title>
+
+<title>Contact Us | HADevZone</title>
+
+<meta name="title" content="Contact HADevZone">
+
+<meta name="description" content="Contact HADevZone for website development, CRM systems, and custom web solutions. We are ready to help your business grow.">
+
+<meta name="keywords" content="contact web developer, HADevZone contact, web development support">
+
+<meta property="og:title" content="Contact HADevZone">
+
+<meta property="og:description" content="Get in touch with our web development team for your project.">
+
 @endsection
 
 @section('content')
@@ -152,33 +164,4 @@
     </div>
     <!-- Vendor End -->
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-    <script>
-        $('#contactForm').on('submit', function(e) {
-            e.preventDefault();
-
-            $('#submitBtn').text('Sending...').prop('disabled', true);
-
-            $.ajax({
-                url: "{{ route('contact.submit') }}",
-                type: "POST",
-                data: $(this).serialize(),
-
-                success: function(res) {
-                    showSuccessAlert(res.message);
-
-                    $('#contactForm')[0].reset();
-                    $('#submitBtn').text('Send Project Request').prop('disabled', false);
-                },
-
-                error: function() {
-                    showErrorAlert('Something went wrong!');
-                    $('#submitBtn').text('Send Project Request').prop('disabled', false);
-                }
-            });
-        });
-    </script>
 @endsection

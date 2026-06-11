@@ -28,7 +28,9 @@ Route::get('/privacy-policy', [PagesController::class, 'privacyPolicy'])
 
 Route::get('/terms-and-conditions', [PagesController::class, 'termsAndConditions'])
     ->name('terms.conditions');
-
+Route::get('/sitemap.xml', [PagesController::class, 'sitemap']);
 
 Route::post('/contact-submit', [ContactController::class, 'submit'])
     ->name('contact.submit');
+    Route::post('/send-quote', [ContactController::class, 'sendQuote'])
+    ->name('send.quote');

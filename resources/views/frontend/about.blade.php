@@ -1,7 +1,17 @@
 @extends('frontend.layouts.app')
 
 @section('meta')
-    <title>HADevZone - Websites, Dashboards & Business Web Solutions</title>
+<title>About Us | HADevZone</title>
+
+<meta name="title" content="About HADevZone | Web Development Company">
+
+<meta name="description" content="Learn about HADevZone, a professional web development company delivering custom websites, CRM systems, and business software solutions.">
+
+<meta name="keywords" content="about HADevZone, web development company, CRM development, business software, web agency">
+
+<meta property="og:title" content="About HADevZone | Web Development Company">
+
+<meta property="og:description" content="We are a professional web development company building scalable digital solutions for businesses.">
 
 @endsection
 

@@ -1,7 +1,18 @@
 @extends('frontend.layouts.app')
 
 @section('meta')
-    <title>HADevZone - Websites, Dashboards & Business Web Solutions</title>
+
+<title>Privacy Policy | HADevZone</title>
+
+<meta name="title" content="Privacy Policy | HADevZone">
+
+<meta name="description" content="Read HADevZone privacy policy to understand how we handle user data and protect your information.">
+
+<meta name="keywords" content="privacy policy, data protection, HADevZone legal">
+
+<meta property="og:title" content="Privacy Policy | HADevZone">
+
+<meta property="og:description" content="Learn how we protect your data and privacy.">
 
 @endsection
 

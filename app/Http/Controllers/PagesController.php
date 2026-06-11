@@ -58,4 +58,10 @@ class PagesController extends Controller
     {
         return view('frontend.termsandconditions');
     }
+    public function sitemap()
+{
+    return response()
+        ->view('frontend.sitemap')
+        ->header('Content-Type', 'application/xml');
+}
 }

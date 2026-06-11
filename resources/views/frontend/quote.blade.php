@@ -1,7 +1,18 @@
 @extends('frontend.layouts.app')
 
 @section('meta')
-    <title>HADevZone - Websites, Dashboards & Business Web Solutions</title>
+
+<title>Get a Quote | HADevZone</title>
+
+<meta name="title" content="Request a Quote | HADevZone">
+
+<meta name="description" content="Request a custom quote for your website, CRM, or web application project from HADevZone development team.">
+
+<meta name="keywords" content="get a quote, web development price, CRM cost, website development estimate">
+
+<meta property="og:title" content="Request a Quote | HADevZone">
+
+<meta property="og:description" content="Get a custom price estimate for your web development project.">
 
 @endsection
 
@@ -71,7 +82,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form>
+                        {{-- <form>
                             <div class="row g-3">
                                 <div class="col-xl-12">
                                     <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
@@ -96,7 +107,63 @@
                                     <button class="btn btn-dark w-100 py-3" type="submit">Send Quote Request</button>
                                 </div>
                             </div>
+                        </form> --}}
+
+                        <form id="quoteForm">
+                            @csrf
+
+                            <div class="row g-3">
+
+                                <div class="col-xl-12">
+                                    <input type="text"
+                                        name="name"
+                                        class="form-control bg-light border-0"
+                                        placeholder="Your Name"
+                                        style="height: 55px;"
+                                        required>
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="email"
+                                        name="email"
+                                        class="form-control bg-light border-0"
+                                        placeholder="Your Email"
+                                        style="height: 55px;"
+                                        required>
+                                </div>
+
+                                <div class="col-12">
+                                    <select name="service"
+                                            class="form-select bg-light border-0"
+                                            style="height: 55px;"
+                                            required>
+                                        <option value="">Select A Service</option>
+                                        <option value="Business Website">Business Website</option>
+                                        <option value="Dashboard / Portal">Dashboard / Portal</option>
+                                        <option value="CRM / HRM System">CRM / HRM System</option>
+                                        <option value="eCommerce Store">eCommerce Store</option>
+                                        <option value="Custom Web Application">Custom Web Application</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea name="message"
+                                            class="form-control bg-light border-0"
+                                            rows="3"
+                                            placeholder="Describe your project, features, and expected timeline"
+                                            required></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-dark w-100 py-3" type="submit">
+                                        Send Quote Request
+                                    </button>
+                                </div>
+
+                            </div>
                         </form>
+
+
                     </div>
                 </div>
             </div>

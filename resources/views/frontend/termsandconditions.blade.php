@@ -1,7 +1,18 @@
 @extends('frontend.layouts.app')
 
 @section('meta')
-    <title>HADevZone - Websites, Dashboards & Business Web Solutions</title>
+
+<title>Terms & Conditions | HADevZone</title>
+
+<meta name="title" content="Terms and Conditions | HADevZone">
+
+<meta name="description" content="Read the terms and conditions for using HADevZone services and website.">
+
+<meta name="keywords" content="terms and conditions, legal, HADevZone policy">
+
+<meta property="og:title" content="Terms and Conditions | HADevZone">
+
+<meta property="og:description" content="Rules and guidelines for using our services.">
 
 @endsection
 
