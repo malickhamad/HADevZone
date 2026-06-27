@@ -13,7 +13,8 @@
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                     <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Pakistan</small>
                     <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+92 311 4973366</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>hadevzone@gmail.com</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>
+info@hadevzone.com</small>
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
